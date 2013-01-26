@@ -13,4 +13,6 @@ function custom_excerpt_length( $length ) {
 	return 20;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+show_admin_bar( false );
 ?>
