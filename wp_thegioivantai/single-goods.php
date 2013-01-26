@@ -119,7 +119,12 @@
 	<input type="button" onclick="javascript:history.back()" value="Trở về" name="back" class="btn btn-m">
 </div>
 
-<!--<div class="grid_5">
+<?php if ($user_ID): ?>
+<?php 
+	$user_info = get_userdata($user_ID);
+?>
+
+	<div class="grid_5">
 	<div class="thongtinlienlac">
 		<h3>THÔNG TIN LIÊN LẠC</h3>
 		<div id="detailMess">
@@ -136,7 +141,7 @@
 						</th>
 						<td align="left">
 							<strong>
-								trieuphiy</strong>
+								<?php print $user_info->display_name ?></strong>
 						</td>
 					</tr>
 					<tr>
@@ -145,8 +150,7 @@
 								Email</label>
 						</th>
 						<td align="left">
-							<a href="mailto:trieuphiy@yahoo.com">
-								trieuphiy@yahoo.com</a>
+							<a href="mailto:<?php print $user_info->user_email ?>"><?php print $user_info->user_email ?></a>
 						</td>
 					</tr>
 					<tr>
@@ -166,8 +170,8 @@
 								Yahoo ID</label>
 						</th>
 						<td>
-							<a href="ymsgr:sendIM?trieuphiy" title="trieuphiy">
-								<img border="0" src="http://opi.yahoo.com/online?u=trieuphiy&amp;m=g&amp;t=1"></a>
+							<a href="ymsgr:sendIM?<?php the_author_yim(); ?>" title="<?php the_author_yim(); ?>">
+								<img border="0" src="http://opi.yahoo.com/online?u=<?php the_author_yim(); ?>&amp;m=g&amp;t=1"></a>
 						</td>
 					</tr>
 					<tr>
@@ -176,9 +180,7 @@
 								Skype ID</label>
 						</th>
 						<td>
-
 							<script src="http://download.skype.com/share/skypebuttons/js/skypeCheck.js" type="text/javascript"></script>
-
 							<a href="skype:?chat" title="">
 								<img style="border: none;" src="http://mystatus.skype.com/smallclassic/"></a>
 						</td>
@@ -186,10 +188,7 @@
 				</tbody></table>
 				
 			</fieldset>
-
-			<img width="19" height="19" alt="" src="/Content01/images/icontable.gif">
-			Nếu bạn chưa có tài khoản, xin vui lòng <strong><a href="/Account/Register">đăng ký
-				tại đây</a></strong> để quản lý tốt hơn thông tin của bạn.
 		</div>
 	</div>
-</div>-->
+</div>
+<?php endif; ?>
