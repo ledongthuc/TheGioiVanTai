@@ -1,11 +1,26 @@
 ﻿<?php get_header(); ?>
 
+</header>
+<div class="art-sheet clearfix">
+	<div class="art-layout-wrapper clearfix">
+	
 <div class="art-content-layout">
 	<div class="art-content-layout-row">
 		<div class="art-layout-cell art-content clearfix">
 			<!-- Loop -->
-			<?php query_posts('showposts=4&cat=4'); ?>
-			<?php while (have_posts()) : the_post(); ?>
+				<?php
+					 $args = array(
+								   'cat' => '4',
+								   'post_type' => 'post',
+								   'posts_per_page' => 1,
+								   'paged' => ( get_query_var('paged') ? get_query_var('paged') : 1),
+								   );
+
+					query_posts($args);
+
+					while (have_posts()) : the_post();
+					/* Do whatever you want to do for every page... */
+				?>
 				<div class="post">
 					<h4 class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
 					<p>Post by: <a href="#"><?php the_author(); ?> </a></p>
@@ -22,9 +37,15 @@
 					</div>
 				</div>
 			<?php endwhile; ?>
+			<div></div>
 			<!-- end Loop -->
-		</div>		
-	</div>
-</div>
+			<?php if (show_posts_nav()) : ?>
+				<div class="pagingbox">
+					<div class="paging">
+						<?php previous_posts_link('&laquo; Previous') ?>&nbsp&nbsp&nbsp<?php next_posts_link('More &raquo;') ?>
+					</div>
+				</div>
+			<?php endif; ?>
 
+<?php wp_reset_query(); ?>
 <?php get_footer(); ?>

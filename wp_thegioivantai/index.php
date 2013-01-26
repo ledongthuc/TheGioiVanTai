@@ -1,5 +1,9 @@
 ﻿<?php get_header(); ?>
 
+</header>
+<div class="art-sheet clearfix">
+	<div class="art-layout-wrapper clearfix">
+
 <div class="art-content-layout">
 	<div class="art-content-layout-row">
 		<div class="art-layout-cell art-content clearfix">
@@ -662,8 +666,5 @@
 		</div>
 		<div class="art-layout-cell art-sidebar1 clearfix">
 			<?php get_sidebar(); ?>
-		</div>
-	</div>
-</div>
 
 <?php get_footer(); ?>

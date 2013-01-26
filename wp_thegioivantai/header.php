@@ -13,8 +13,10 @@
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
 <?php wp_head(); ?>
+
 </head>
 <body>
+
 <div id="art-main">
 <header class="art-header clearfix">
     <div class="art-shapes">
@@ -28,16 +30,58 @@
 
 	<nav class="art-nav clearfix desktop-nav">
 		<ul class="art-hmenu">
-			<li><a href="#" class="active">Trang Chủ</a></li>
-			<li><a href="<?php bloginfo('url'); ?>/?cat=2">Tìm Xe</a></li>
-			<li><a href="<?php bloginfo('url'); ?>/?cat=3">Tìm Hàng</a></li>
+			<li><a id="home" href="<?php bloginfo('url'); ?>">Trang chủ</a></li>
+			<li><a id="vehicle" href="<?php bloginfo('url'); ?>/?cat=2">Tìm Xe</a></li>
+			<li><a id="goods" href="<?php bloginfo('url'); ?>/?cat=3">Tìm Hàng</a></li>
 			<!--<li><a href="#">Tìm Kho</a></li>
 			<li><a href="#">Thuê Kho</a></li>
 			<li><a href="#">Mua/Bán Xe</a></li>-->
-			<li><a href="<?php bloginfo('url'); ?>/?cat=4">Tin Tức</a></li>
+			<li><a id="news" href="<?php bloginfo('url'); ?>/?cat=4">Tin Tức</a></li>
 		</ul> 
-	</nav>               
-</header>
+	</nav> 
+	
+<?php
+	$pageURL = 'http';
+	if ($_SERVER["HTTPS"] == "on") 
+	{
+		$pageURL .= "s";
+	}
+	
+	$pageURL .= "://";
+	if ($_SERVER["SERVER_PORT"] != "80") 
+	{
+		$pageURL .= $_SERVER["SERVER_NAME"].":".$_SERVER["SERVER_PORT"].$_SERVER["REQUEST_URI"];
+	} 
+	else 
+	{
+		$pageURL .= $_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"];
+	}
+	
+	$currentPage = site_url().'/';
+	
+	if ( strpos($pageURL, $currentPage."?cat=2") !== false ) { $current = 'vehicle';}
+	elseif ( strpos($pageURL, $currentPage."?cat=3") !== false ) { $current = 'goods';}
+	elseif ( strpos($pageURL, $currentPage."?cat=4") !== false ) { $current = 'news';}
+	elseif ( $pageURL == $currentPage ) { $current = 'home';}
+?>
 
-<div class="art-sheet clearfix">
-<div class="art-layout-wrapper clearfix">
+<style type="text/css">
+	#<?php echo $current; ?> {
+		background: #F4B225;
+	   background: linear-gradient(top, #F5BE47 0, #F2AA0D 86%, #E9A30C 100%) no-repeat;
+	   background: -webkit-linear-gradient(top, #F5BE47 0, #F2AA0D 86%, #E9A30C 100%) no-repeat;
+	   background: -moz-linear-gradient(top, #F5BE47 0, #F2AA0D 86%, #E9A30C 100%) no-repeat;
+	   background: -o-linear-gradient(top, #F5BE47 0, #F2AA0D 86%, #E9A30C 100%) no-repeat;
+	   background: -ms-linear-gradient(top, #F5BE47 0, #F2AA0D 86%, #E9A30C 100%) no-repeat;
+	   background: linear-gradient(top, #F5BE47 0, #F2AA0D 86%, #E9A30C 100%) no-repeat;
+	   -svg-background: linear-gradient(top, #F5BE47 0, #F2AA0D 86%, #E9A30C 100%) no-repeat;
+	   -webkit-border-radius:7px;
+	   -moz-border-radius:7px;
+	   border-radius:7px;
+	   padding:0 20px;
+	   margin:0 auto;
+	   color: #262626;
+	   text-decoration: none;
+	   border: 1px solid;
+	}
+</style>

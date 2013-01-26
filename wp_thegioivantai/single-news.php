@@ -1,3 +1,10 @@
+</header>
+<div class="art-sheet clearfix">
+<div class="art-layout-wrapper clearfix">
+<div class="art-content-layout">
+	<div class="art-content-layout-row">
+		<div class="art-layout-cell art-content clearfix">
+
 <div class="content">
 	<div class="content-center">
 		<div class="row-fluid dynamic">
@@ -15,4 +22,3 @@
 		</div>
 	</div>
 </div>
-

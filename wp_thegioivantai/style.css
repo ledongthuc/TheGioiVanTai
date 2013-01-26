@@ -651,26 +651,6 @@ ul.art-hmenu>li>a
    text-align: left;
 }
 
-ul.art-hmenu>li>a.active
-{
-   background: #F4B225;
-   background: linear-gradient(top, #F5BE47 0, #F2AA0D 86%, #E9A30C 100%) no-repeat;
-   background: -webkit-linear-gradient(top, #F5BE47 0, #F2AA0D 86%, #E9A30C 100%) no-repeat;
-   background: -moz-linear-gradient(top, #F5BE47 0, #F2AA0D 86%, #E9A30C 100%) no-repeat;
-   background: -o-linear-gradient(top, #F5BE47 0, #F2AA0D 86%, #E9A30C 100%) no-repeat;
-   background: -ms-linear-gradient(top, #F5BE47 0, #F2AA0D 86%, #E9A30C 100%) no-repeat;
-   background: linear-gradient(top, #F5BE47 0, #F2AA0D 86%, #E9A30C 100%) no-repeat;
-   -svg-background: linear-gradient(top, #F5BE47 0, #F2AA0D 86%, #E9A30C 100%) no-repeat;
-   -webkit-border-radius:7px;
-   -moz-border-radius:7px;
-   border-radius:7px;
-   padding:0 20px;
-   margin:0 auto;
-   color: #262626;
-   text-decoration: none;
-   border: 1px solid;
-}
-
 ul.art-hmenu>li>a:visited, 
 ul.art-hmenu>li>a:hover, 
 ul.art-hmenu>li:hover>a {

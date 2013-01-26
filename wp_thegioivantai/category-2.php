@@ -1,5 +1,9 @@
 ﻿<?php get_header(); ?>
 
+</header>
+<div class="art-sheet clearfix">
+	<div class="art-layout-wrapper clearfix">
+
 <div class="art-content-layout">
 	<div class="art-content-layout-row">
 		<div class="art-post art-article">
@@ -214,9 +218,6 @@
 					</div>
 				</div>
 			<?php endif; ?>
-		</div>
-	</div>
-</div>
 
 <?php wp_reset_query(); ?>
 <?php get_footer(); ?>
