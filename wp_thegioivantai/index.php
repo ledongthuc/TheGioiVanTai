@@ -24,12 +24,12 @@
 											</tr>
 										</thead>
 										<tbody>
-										<?php query_posts('showposts=5&cat=3'); ?>
+										<?php query_posts('showposts=5&post_type=chuyen_hang'); ?>
 										<?php while (have_posts()) : the_post(); ?>
 											<tr>
 												<td>
 													<div class="yui-dt-liner">
-														<a href="<?php the_permalink(); ?>"><?php echo get_post_meta($post->ID, "Mã số", true); ?></a>
+														<a href="<?php the_permalink(); ?>"><?php echo get_field("mã_số"); ?></a>
 													</div>
 												</td>
 												<td>
