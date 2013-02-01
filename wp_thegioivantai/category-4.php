@@ -10,8 +10,7 @@
 			<!-- Loop -->
 				<?php
 					 $args = array(
-								   'cat' => '4',
-								   'post_type' => 'post',
+								   'post_type' => 'tin_tuc',
 								   'posts_per_page' => 1,
 								   'paged' => ( get_query_var('paged') ? get_query_var('paged') : 1),
 								   );

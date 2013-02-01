@@ -138,35 +138,35 @@
 							<div class="yui-dt-liner">
 						 
 								<a href="<?php the_permalink(); ?>">
-									<?php echo get_field("mã_số"); ?>
+									<?php echo get_field("code"); ?>
 								 </a>
 								
 							</div>
 						</td>
 						<td>
 							<div class="yui-dt-liner">
-								<a href="<?php the_permalink(); ?>" class="link-filter" title="<?php echo get_post_meta($post->ID, 'Đi từ', true); ?>">
-									<?php echo get_post_meta($post->ID, "Đi từ", true); ?></a>
+								<a href="<?php the_permalink(); ?>" class="link-filter" title="<?php echo get_field('from'); ?>">
+									<?php echo get_field("from"); ?></a>
 								
 							</div>
 						</td>
 						<td>
 							<div class="yui-dt-liner">
-								<a href="<?php the_permalink(); ?>" class="link-filter" title="">
-									</a>
+								<a href="<?php the_permalink(); ?>" class="link-filter" title="<?php echo get_field('from_province'); ?>">
+									<?php echo get_field("from_province"); ?></a>
 							</div>
 						</td>
 						<td>
 							<div class="yui-dt-liner">
-								<a href="<?php the_permalink(); ?>" class="link-filter" title="Đến">
-									<?php echo get_post_meta($post->ID, "Đến", true); ?></a>
+								<a href="<?php the_permalink(); ?>" class="link-filter" title="<?php echo get_field('to'); ?>">
+									<?php echo get_field("to"); ?></a>
 								
 							</div>
 						</td>
 						<td>
 							<div class="yui-dt-liner">
-								<a href="<?php the_permalink(); ?>" class="link-filter" title="">
-									</a>
+								<a href="<?php the_permalink(); ?>" class="link-filter" title="<?php echo get_field('to_province'); ?>">
+									<?php echo get_field("to_province"); ?></a>
 							</div>
 						</td>
 						<td>
@@ -177,13 +177,13 @@
 						<td>
 							<div class="yui-dt-liner">
 								<a href="<?php the_permalink(); ?>">
-									<?php echo get_post_meta($post->ID, "Loại xe", true); ?>
+									<?php echo get_field("vehicle"); ?>
 								</a>
 							</div>
 						</td>
 						<td>
 							<div class="yui-dt-liner">
-								<?php echo get_post_meta($post->ID, "Ngày giờ", true); ?>
+								<?php echo get_field("delivery_date"); ?>
 							</div>
 						</td>						
 						<td align="center">
