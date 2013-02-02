@@ -26,8 +26,8 @@ h1, h2, h3, h4, h5, h6, h1 *, h2 *, h3 *, h4 *, h5 *, h6 * {
 #art-main {
   background-attachment:initial, initial, initial;
   background-clip:initial, initial, initial;
-  background-color:#97CD42;
-  background-image:url('img/pageglare.png'), url('img/page.jpeg'), initial;
+  /*background-color:#97CD42;
+  background-image:url('img/pageglare.png'), url('img/page.jpeg'), initial;*/
   background-origin:initial, initial, initial;
   background-position:50% 0;
   background-repeat:no-repeat, repeat-x;
@@ -462,7 +462,7 @@ text-transform: uppercase;
    margin:0 auto;
    position:relative;
    height: 400px;
-   background-image: url('img/pageglare.png');
+   /*background-image: url('img/pageglare.png');*/
    background-position: center top;
    background-repeat: no-repeat;
 }
@@ -924,6 +924,7 @@ ul.art-hmenu ul
   margin:0 auto;
   position:relative;
   z-index:auto !important;
+  background-color: #e9e9e9;
 }
 .art-content-layout {
   border-collapse:collapse;
@@ -937,6 +938,7 @@ ul.art-hmenu ul
 .art-layout-cell {
   display:table-cell;
   vertical-align:top;
+  background-color: #e9e9e9;
 }
 .art-breadcrumbs {
   margin:0 auto;
@@ -1264,7 +1266,8 @@ div.art-block img {
   margin:10px 0 0 10px;
 }
 .art-post {
-  background-color:#FFFFFF;
+  /*background-color:#FFFFFF;*/
+  background-color: #e9e9e9;
   background-position:initial initial;
   background-repeat:initial initial;
   border-bottom-left-radius:6px;
@@ -1837,6 +1840,7 @@ img.art-lightbox-image.active {
 .art-content-layout .art-sidebar1 {
   margin:0 auto;
   width:250px;
+  background-color: #ccc;
 }
 .art-blockheader .t, .art-vmenublockheader .t {
   white-space:nowrap;

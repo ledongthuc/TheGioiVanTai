@@ -15,4 +15,11 @@ function custom_excerpt_length( $length ) {
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 show_admin_bar( false );
+
+/*
+    Custom fields
+*/
+require_once("custom-field/chuyen-hang.php");
+require_once("custom-field/chuyen-xe.php");
+require_once("custom-field/xe.php");
 ?>
