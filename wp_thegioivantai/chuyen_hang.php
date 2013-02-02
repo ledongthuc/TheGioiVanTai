@@ -1,6 +1,7 @@
 ﻿<?php get_header(); ?>
 
 </header>
+<div>Post Type Chuyen Hang</div>
 <div class="art-sheet clearfix">
 	<div class="art-layout-wrapper clearfix">
 
@@ -133,15 +134,18 @@
 					if ($loaiXe == '0' && $diemDi == '0' && $diemDen == '0')
 					{
 						$args = array(
-									   'post_type' => 'chuyen_xe',
+									   'cat' => '2',
+									   'post_type' => 'post',
 									   'posts_per_page' => 2,
 									   'paged' => ( get_query_var('paged') ? get_query_var('paged') : 1),
 									   );
+						echo '<div>Buoi</div>';
 					}
 					else
 					{
 						$args = array(
-								   'post_type' => 'chuyen_xe',
+								   'cat' => '2',
+								   'post_type' => 'post',
 								   'posts_per_page' => 3,
 								   'paged' => ( get_query_var('paged') ? get_query_var('paged') : 1),
 								   'meta_query' => array(
@@ -183,35 +187,35 @@
 							<div class="yui-dt-liner">
 						 
 								<a href="<?php the_permalink(); ?>">
-									<?php echo get_field("code"); ?>
+									<?php echo get_post_meta($post->ID, "Mã số", true); ?>
 								 </a>
 								
 							</div>
 						</td>
 						<td>
 							<div class="yui-dt-liner">
-								<a href="<?php the_permalink(); ?>" class="link-filter" title="<?php echo get_field('from'); ?>">
-									<?php echo get_field("from"); ?></a>
+								<a href="<?php the_permalink(); ?>" class="link-filter" title="<?php echo get_post_meta($post->ID, 'Đi từ', true); ?>">
+									<?php echo get_post_meta($post->ID, "Đi từ", true); ?></a>
 								
 							</div>
 						</td>
 						<td>
 							<div class="yui-dt-liner">
-								<a href="<?php the_permalink(); ?>" class="link-filter" title="<?php echo get_field('from_province'); ?>">
-									<?php echo get_field("from_province"); ?></a>
+								<a href="<?php the_permalink(); ?>" class="link-filter" title="">
+									</a>
 							</div>
 						</td>
 						<td>
 							<div class="yui-dt-liner">
-								<a href="<?php the_permalink(); ?>" class="link-filter" title="<?php echo get_field('to'); ?>">
-									<?php echo get_field("to"); ?></a>
+								<a href="<?php the_permalink(); ?>" class="link-filter" title="Đến">
+									<?php echo get_post_meta($post->ID, "Đến", true); ?></a>
 								
 							</div>
 						</td>
 						<td>
 							<div class="yui-dt-liner">
-								<a href="<?php the_permalink(); ?>" class="link-filter" title="<?php echo get_field('to_province'); ?>">
-									<?php echo get_field("to_province"); ?></a>
+								<a href="<?php the_permalink(); ?>" class="link-filter" title="">
+									</a>
 							</div>
 						</td>
 						<td>
@@ -222,18 +226,18 @@
 						<td>
 							<div class="yui-dt-liner">
 								<a href="<?php the_permalink(); ?>">
-									<?php echo get_field("way_type"); ?>
+									Xe đi
 								</a>
 							</div>
 						</td>
 						<td>
 							<div class="yui-dt-liner">
-								<?php echo get_field("delivery_date"); ?>
+								<?php echo get_post_meta($post->ID, "Ngày giờ", true); ?>
 							</div>
 						</td>
 						<td align="right">
 							<div class="yui-dt-liner">
-								<?php echo get_field("price"); ?>
+								<?php echo get_post_meta($post->ID, "Giá", true); ?>
 							</div>
 						</td>
 						

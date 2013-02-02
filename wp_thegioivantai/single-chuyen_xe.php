@@ -1,4 +1,8 @@
-﻿</header>
+﻿<?php get_header(); ?>
+
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+</header>
 <div class="art-sheet clearfix">
 <div class="art-layout-wrapper clearfix">
 <div class="art-content-layout">
@@ -9,7 +13,7 @@
 	<div class="grid_9 alpha">
 		<div class="thongtinxe">
 			<h3 id="thongtinxeTitle">
-				THÔNG TIN VỀ CHUYẾN HÀNG
+				THÔNG TIN VỀ CHUYẾN XE
 			</h3>
 			<div class="borderlist">
 				<h4>
@@ -21,91 +25,89 @@
 						<tr class="even">
 							<th>
 								<strong>
-									Mã số</strong>:
+									Mã số:</strong>
 							</th>
 							<td>
-								<?php echo get_post_meta($post->ID, "Mã số", true); ?>
+								<?php echo get_field("code"); ?>
 							</td>
 						</tr>
 						<tr class="odd">
 							<th>
 								<strong>
-									Đi từ</strong>:
+									Đi từ:</strong>
 							</th>
 							<td>
-								<?php echo get_post_meta($post->ID, "Đi từ", true); ?>
+								<?php echo get_field("from"); ?>
 							</td>
 						</tr>
 						<tr class="even">
 							<th>
 								<strong>
-									Đến</strong>:
+									Đến:</strong>
 							</th>
 							<td>
-								<?php echo get_post_meta($post->ID, "Đến", true); ?>
+								<?php echo get_field("to"); ?>
 							</td>
 						</tr>
 						<tr class="odd">
 							<th>
-								<strong>
-									Ngày
-									Giờ</strong>:
+								<strong>Ngày hết hạn:</strong>
 							</th>
 							<td>
-								<?php echo get_post_meta($post->ID, "Ngày giờ", true); ?>
+								<?php echo get_field("expire_date"); ?>
 							</td>
 						</tr>
 						<tr class="odd">
-							<th><strong>Giá</strong> </th>
+							<th><strong>Giá:</strong> </th>
 							<td>
-								<?php echo get_post_meta($post->ID, "Giá", true); ?>
+								<?php echo get_field("price"); ?>
 							</td>
 						</tr>
 						
 						<tr class="even">
 							<th>
 								<strong>
-									Loại Xe
-								</strong>:
+									Loại xe:
+								</strong>
 							</th>
 							<td>
-								<?php echo get_post_meta($post->ID, "Loại xe", true); ?>
+								<?php echo get_field("vehicle"); ?>
 							</td>
 						</tr>
 						<tr class="odd">
 							<th>
 								<strong>
-									Trọng Tải</strong>:
+									Trọng tải:</strong>
 							</th>
 							<td>
-								<?php echo get_post_meta($post->ID, "Trọng tải", true); ?>
+								<?php echo get_field("capacity"); ?>
 							</td>
 						</tr>
 						<tr class="even">
 							<th>
 								<strong>
-									Kích Thước</strong>:
+									Kích thước:</strong>
 							</th>
 							<td>
-								<?php echo get_post_meta($post->ID, "Kích thước", true); ?>
+								<?php echo get_field("size"); ?>
 							</td>
 						</tr>
 						<tr class="odd">
 							<th>
 								<strong>
-									Biển Số xe</strong>:
+									Biển Số xe:</strong>
 							</th>
 							<td>
-								<?php echo get_post_meta($post->ID, "Biển số xe", true); ?>
+								<?php echo get_field("license_plate"); ?>
 							</td>
 						</tr>
 						
 						<tr class="even">
 							<th>
-								<strong>Số lượng xe</strong>:
+								<strong>Số lượng xe:</strong>
 							</th>
 							<td>
-								<?php echo get_post_meta($post->ID, "Số lượng xe", true); ?>
+								<?php echo get_field("quantity"); ?>
 							</td>
 						</tr>
 					</tbody>
@@ -147,7 +149,7 @@
 					<tr>
 						<th>
 							<label>
-								Email</label>
+								Email:</label>
 						</th>
 						<td align="left">
 							<a href="mailto:<?php print $user_info->user_email ?>"><?php print $user_info->user_email ?></a>
@@ -156,7 +158,7 @@
 					<tr>
 						<th>
 							<label>
-								Điện Thọai</label>
+								Điện thọai:</label>
 						</th>
 						<td align="left">
 							<strong>
@@ -167,7 +169,7 @@
 					<tr>
 						<th>
 							<label>
-								Yahoo ID</label>
+								Yahoo ID:</label>
 						</th>
 						<td>
 							<a href="ymsgr:sendIM?<?php the_author_yim(); ?>" title="<?php the_author_yim(); ?>">
@@ -177,7 +179,7 @@
 					<tr>
 						<th>
 							<label>
-								Skype ID</label>
+								Skype ID:</label>
 						</th>
 						<td>
 							<script src="http://download.skype.com/share/skypebuttons/js/skypeCheck.js" type="text/javascript"></script>
@@ -192,3 +194,7 @@
 	</div>
 </div>
 <?php endif; ?>
+
+<?php endwhile; endif; ?>
+
+<?php get_footer(); ?>

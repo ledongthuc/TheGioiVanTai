@@ -1,3 +1,7 @@
+<?php get_header(); ?>
+
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
 </header>
 <div class="art-sheet clearfix">
 <div class="art-layout-wrapper clearfix">
@@ -22,3 +26,11 @@
 		</div>
 	</div>
 </div>
+
+<?php endwhile; endif; ?>
+
+	</div>
+		<div class="art-layout-cell art-sidebar1 clearfix">
+			<?php get_sidebar(); ?>
+
+<?php get_footer(); ?>
