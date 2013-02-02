@@ -342,7 +342,7 @@ li p, .art-postcontent li p, .art-blockcontent li p {
    left: 0;
    overflow: hidden;
    z-index: 0;
-   min-width: 1170px;
+   min-width: 1000px;
 }
 
 .art-slidenavigator > a {
@@ -360,7 +360,7 @@ li p, .art-postcontent li p, .art-blockcontent li p {
 {
     display: block;
     left: 69.65%;
-    margin-left: -350px;
+    margin-left: -250px;
     position: absolute;
     top: 97px;
     width: 503px;
@@ -374,7 +374,7 @@ li p, .art-postcontent li p, .art-blockcontent li p {
 {
     display: block;
     left: 0%;
-    margin-left: -5px;
+    margin-left: -25px;
     position: absolute;
     top: 13px;
     width: 600px;
@@ -383,24 +383,21 @@ li p, .art-postcontent li p, .art-blockcontent li p {
     background-position: 0 0;
     background-repeat: no-repeat;
     z-index: 2;
-	left: 164.52px;
 }
 .art-headline
 {
+  margin-left: 55px;
   display: inline-block;
   position: absolute;
   min-width: 50px;
-  top: 37px;
-  left: 50px;
+  top: 30px;
   line-height: 100%;
-  margin-left: -13px !important;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
   z-index: 99;
-  left: 239.37px;
 }
 
 .art-headline, 
@@ -418,7 +415,6 @@ text-transform: uppercase;
 text-align: left;
 text-shadow: 0px 0px 6px rgba(23, 23, 23, 0.98);
   padding: 0;
-  margin: 0;
   color: #F7F7F7 !important;
   white-space: nowrap;
 }
@@ -428,9 +424,7 @@ text-shadow: 0px 0px 6px rgba(23, 23, 23, 0.98);
   position: absolute;
   min-width: 50px;
   top: 101px;
-  left: 1.38%;
   line-height: 100%;
-  margin-left: -3px !important;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -438,7 +432,6 @@ text-shadow: 0px 0px 6px rgba(23, 23, 23, 0.98);
   transform: rotate(0deg);
   z-index: 99;
   white-space: nowrap;
-  left: 204.44px;
 }
 
 .art-slogan, 
@@ -454,7 +447,7 @@ font-style: normal;
 text-decoration: none;
 text-transform: uppercase;
   padding: 0;
-  margin: 0;
+  margin-left: 20px;
   color: #424242 !important;
 }
 
@@ -462,7 +455,8 @@ text-transform: uppercase;
 {
    margin:0 auto;
    position:relative;
-   height: 400px;
+   height: 433px;
+   width: 1000px;
    /*background-image: url('img/pageglare.png');*/
    background-position: center top;
    background-repeat: no-repeat;
@@ -499,11 +493,10 @@ text-transform: uppercase;
    top:   0;
    width: 100%;
    text-align: right;
-   left: 174.5px;
 }
 
 .art-nav.clearfix.desktop-nav {
-    top: 350px;
+    top: 385px;
 }
 
 ul.art-hmenu a, ul.art-hmenu a:link, ul.art-hmenu a:visited, ul.art-hmenu a:hover 
@@ -568,9 +561,8 @@ ul.art-hmenu
 }
 
 .desktop-nav.art-nav{
-   width: 900px;
+   width: 1000px;
    padding-left: 6px;
-   padding-right: 6px;
 }
 
 .art-hmenu-extra1
@@ -925,7 +917,6 @@ ul.art-hmenu ul
   margin:0 auto;
   position:relative;
   z-index:auto !important;
-  background-color: #e9e9e9;
 }
 .art-content-layout {
   border-collapse:collapse;
@@ -939,7 +930,6 @@ ul.art-hmenu ul
 .art-layout-cell {
   display:table-cell;
   vertical-align:top;
-  background-color: #e9e9e9;
 }
 .art-breadcrumbs {
   margin:0 auto;
@@ -1267,8 +1257,7 @@ div.art-block img {
   margin:10px 0 0 10px;
 }
 .art-post {
-  /*background-color:#FFFFFF;*/
-  background-color: #e9e9e9;
+  background-color:#FFFFFF;
   background-position:initial initial;
   background-repeat:initial initial;
   border-bottom-left-radius:6px;
@@ -1841,7 +1830,6 @@ img.art-lightbox-image.active {
 .art-content-layout .art-sidebar1 {
   margin:0 auto;
   width:250px;
-  background-color: #ccc;
 }
 .art-blockheader .t, .art-vmenublockheader .t {
   white-space:nowrap;
@@ -2119,18 +2107,17 @@ table.border td, table.border th {
 }
 #slide {
     display: block;
-    left: 15%;
     position: absolute;
     top: 125px;
-    width: 390px;
-    height: 215px;
+    width: 400px;
+    height: 250px;
     z-index: 1;	
     padding: 5px;
     background-color: #75C0FA;
 }
 #slide img {
-   width: 390px;
-   height: 215px;
+   width: 400px;
+   height: 250px;
 }
 #slide .pagination {
    display: none;

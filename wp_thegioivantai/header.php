@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
@@ -53,7 +53,7 @@
 <?php wp_head(); ?>
 
 </head>
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> style="background-color:#011727;">
 
 <div id="art-main">
 <header class="art-header clearfix">
