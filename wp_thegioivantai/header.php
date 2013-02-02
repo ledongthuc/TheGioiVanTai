@@ -15,7 +15,7 @@
 <?php wp_head(); ?>
 
 </head>
-<body>
+<body <?php body_class(); ?>>
 
 <div id="art-main">
 <header class="art-header clearfix">
