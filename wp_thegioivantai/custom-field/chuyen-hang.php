@@ -9,19 +9,45 @@
 if(function_exists("register_field_group"))
 {
 	register_field_group(array (
-		'id' => '510c73357c4ff',
-		'title' => 'Chuyến xe',
+		'id' => '510c73c2f0780',
+		'title' => 'Hàng hóa',
 		'fields' => 
 		array (
 			0 => 
 			array (
-				'key' => 'field_4',
-				'label' => 'Chiều đi',
-				'name' => 'type',
-				'type' => 'select',
+				'key' => 'field_28',
+				'label' => 'Mã số',
+				'name' => 'code',
+				'type' => 'text',
 				'order_no' => 0,
 				'instructions' => '',
 				'required' => 1,
+				'conditional_logic' => 
+				array (
+					'status' => 0,
+					'rules' => 
+					array (
+						0 => 
+						array (
+							'field' => 'field_30',
+							'operator' => '==',
+							'value' => 1,
+						),
+					),
+					'allorany' => 'all',
+				),
+				'default_value' => '',
+				'formatting' => 'none',
+			),
+			1 => 
+			array (
+				'key' => 'field_29',
+				'label' => 'Loại hàng',
+				'name' => 'kind',
+				'type' => 'text',
+				'order_no' => 1,
+				'instructions' => '',
+				'required' => 0,
 				'conditional_logic' => 
 				array (
 					'status' => 0,
@@ -36,48 +62,15 @@ if(function_exists("register_field_group"))
 					),
 					'allorany' => 'all',
 				),
-				'choices' => 
-				array (
-					1 => 'Xe đi',
-					2 => 'Xe quay về',
-					3 => 'Xe thường ngày',
-				),
-				'default_value' => 1,
-				'allow_null' => 0,
-				'multiple' => 0,
-			),
-			1 => 
-			array (
-				'key' => 'field_5',
-				'label' => 'Mã số',
-				'name' => 'code',
-				'type' => 'text',
-				'order_no' => 1,
-				'instructions' => '',
-				'required' => 1,
-				'conditional_logic' => 
-				array (
-					'status' => 0,
-					'rules' => 
-					array (
-						0 => 
-						array (
-							'field' => 'field_4',
-							'operator' => '==',
-							'value' => 1,
-						),
-					),
-					'allorany' => 'all',
-				),
-				'default_value' => 'X00001',
+				'default_value' => '',
 				'formatting' => 'none',
 			),
 			2 => 
 			array (
-				'key' => 'field_6',
-				'label' => 'Đi từ',
-				'name' => 'from',
-				'type' => 'select',
+				'key' => 'field_30',
+				'label' => 'Loại xe',
+				'name' => 'vehicle',
+				'type' => 'checkbox',
 				'order_no' => 2,
 				'instructions' => '',
 				'required' => 0,
@@ -88,7 +81,42 @@ if(function_exists("register_field_group"))
 					array (
 						0 => 
 						array (
-							'field' => 'field_4',
+							'field' => 'field_30',
+							'operator' => '==',
+							'value' => 1,
+						),
+					),
+					'allorany' => 'all',
+				),
+				'choices' => 
+				array (
+					1 => 'Xe tải',
+					2 => 'Xe ben',
+					3 => 'Xe Container',
+					4 => 'Chuyên dụng',
+					5 => 'Siêu trường - Siêu trọng',
+					6 => 'Xe bồn',
+					7 => 'Xe cẩu',
+					8 => 'Loại khác',
+				),
+			),
+			3 => 
+			array (
+				'key' => 'field_31',
+				'label' => 'Đi từ',
+				'name' => 'from',
+				'type' => 'select',
+				'order_no' => 3,
+				'instructions' => '',
+				'required' => 1,
+				'conditional_logic' => 
+				array (
+					'status' => 0,
+					'rules' => 
+					array (
+						0 => 
+						array (
+							'field' => 'field_30',
 							'operator' => '==',
 							'value' => 1,
 						),
@@ -167,15 +195,15 @@ if(function_exists("register_field_group"))
 				'allow_null' => 0,
 				'multiple' => 0,
 			),
-			3 => 
+			4 => 
 			array (
-				'key' => 'field_7',
-				'label' => 'Nơi đến',
+				'key' => 'field_32',
+				'label' => 'Đến',
 				'name' => 'to',
 				'type' => 'select',
-				'order_no' => 3,
+				'order_no' => 4,
 				'instructions' => '',
-				'required' => 0,
+				'required' => 1,
 				'conditional_logic' => 
 				array (
 					'status' => 0,
@@ -183,7 +211,7 @@ if(function_exists("register_field_group"))
 					array (
 						0 => 
 						array (
-							'field' => 'field_4',
+							'field' => 'field_30',
 							'operator' => '==',
 							'value' => 1,
 						),
@@ -192,46 +220,85 @@ if(function_exists("register_field_group"))
 				),
 				'choices' => 
 				array (
+					'An giang' => 'An giang',
+					'Bà Rịa Vũng Tàu' => 'Bà Rịa Vũng Tàu',
+					'Bạc Liêu' => 'Bạc Liêu',
+					'Bắc Kạn' => 'Bắc Kạn',
+					'Bắc Giang' => 'Bắc Giang',
+					'Bắc Ninh' => 'Bắc Ninh',
+					'Bến Tre' => 'Bến Tre',
+					'Bình Dương' => 'Bình Dương',
+					'Bình Định' => 'Bình Định',
+					'Bình Phước' => 'Bình Phước',
+					'Bình Thuận' => 'Bình Thuận',
+					'Cà Mau' => 'Cà Mau',
+					'Cao Bằng' => 'Cao Bằng',
+					'Cần Thơ' => 'Cần Thơ',
+					'Đà Nẵng' => 'Đà Nẵng',
+					'Đắc Lắk' => 'Đắc Lắk',
+					'Đắc Nông' => 'Đắc Nông',
+					'Điện Biên' => 'Điện Biên',
+					'Đồng Nai' => 'Đồng Nai',
+					'Đồng Tháp' => 'Đồng Tháp',
+					'Gia Lai' => 'Gia Lai',
+					'Hà Giang' => 'Hà Giang',
+					'Hà Nam' => 'Hà Nam',
+					'Hà Nội' => 'Hà Nội',
+					'Hà Tĩnh' => 'Hà Tĩnh',
+					'Hải Dương' => 'Hải Dương',
+					'Hải Phòng' => 'Hải Phòng',
+					'Hậu Giang' => 'Hậu Giang',
+					'Hoà Bình' => 'Hoà Bình',
+					'Hưng Yên' => 'Hưng Yên',
+					'Khánh Hoà' => 'Khánh Hoà',
+					'Kiên Giang' => 'Kiên Giang',
+					'Kon Tum' => 'Kon Tum',
+					'Lai Châu' => 'Lai Châu',
+					'Lâm Đồng' => 'Lâm Đồng',
+					'Lạng Sơn' => 'Lạng Sơn',
+					'Lào Cai' => 'Lào Cai',
+					'Long An' => 'Long An',
+					'Nam Định' => 'Nam Định',
+					'Nghệ An' => 'Nghệ An',
+					'Ninh Bình' => 'Ninh Bình',
+					'Ninh Thuận' => 'Ninh Thuận',
+					'Phú Thọ' => 'Phú Thọ',
+					'Phú Yên' => 'Phú Yên',
+					'Quảng Bình' => 'Quảng Bình',
+					'Quảng Nam' => 'Quảng Nam',
+					'Quảng Ngãi' => 'Quảng Ngãi',
+					'Quảng Ninh' => 'Quảng Ninh',
+					'Quảng Trị' => 'Quảng Trị',
+					'Sóc Trăng' => 'Sóc Trăng',
+					'Sơn La' => 'Sơn La',
+					'Tây Ninh' => 'Tây Ninh',
+					'Thái Bình' => 'Thái Bình',
+					'Thái Nguyên' => 'Thái Nguyên',
+					'Thanh Hoá' => 'Thanh Hoá',
+					'Thừa Thiên Huế' => 'Thừa Thiên Huế',
+					'Tiền Giang' => 'Tiền Giang',
+					'TP. Hồ Chí Minh' => 'TP. Hồ Chí Minh',
+					'Trà Vinh' => 'Trà Vinh',
+					'Tuyên Quang' => 'Tuyên Quang',
+					'Vĩnh Long' => 'Vĩnh Long',
+					'Vĩnh Phúc' => 'Vĩnh Phúc',
+					'Yên Bái' => 'Yên Bái',
+					'Hà Tây' => 'Hà Tây',
+					'Ngoài Việt Nam' => 'Ngoài Việt Nam',
 				),
 				'default_value' => '',
-				'allow_null' => 1,
+				'allow_null' => 0,
 				'multiple' => 0,
-			),
-			4 => 
-			array (
-				'key' => 'field_8',
-				'label' => 'Ngày khởi hành',
-				'name' => 'start-date',
-				'type' => 'date_picker',
-				'order_no' => 4,
-				'instructions' => '',
-				'required' => 0,
-				'conditional_logic' => 
-				array (
-					'status' => 0,
-					'rules' => 
-					array (
-						0 => 
-						array (
-							'field' => 'field_4',
-							'operator' => '==',
-							'value' => 1,
-						),
-					),
-					'allorany' => 'all',
-				),
-				'date_format' => 'yymmdd',
-				'display_format' => 'dd/mm/yy',
 			),
 			5 => 
 			array (
-				'key' => 'field_9',
+				'key' => 'field_33',
 				'label' => 'Giá',
 				'name' => 'price',
 				'type' => 'text',
 				'order_no' => 5,
 				'instructions' => '',
-				'required' => 0,
+				'required' => 1,
 				'conditional_logic' => 
 				array (
 					'status' => 0,
@@ -239,7 +306,7 @@ if(function_exists("register_field_group"))
 					array (
 						0 => 
 						array (
-							'field' => 'field_4',
+							'field' => 'field_30',
 							'operator' => '==',
 							'value' => 1,
 						),
@@ -251,13 +318,13 @@ if(function_exists("register_field_group"))
 			),
 			6 => 
 			array (
-				'key' => 'field_14',
-				'label' => 'Số lượng xe',
-				'name' => 'quantity',
-				'type' => 'text',
+				'key' => 'field_34',
+				'label' => 'Ngày nhận',
+				'name' => 'receive-date',
+				'type' => 'date_picker',
 				'order_no' => 6,
 				'instructions' => '',
-				'required' => 0,
+				'required' => 1,
 				'conditional_logic' => 
 				array (
 					'status' => 0,
@@ -265,22 +332,22 @@ if(function_exists("register_field_group"))
 					array (
 						0 => 
 						array (
-							'field' => 'field_4',
+							'field' => 'field_30',
 							'operator' => '==',
 							'value' => 1,
 						),
 					),
 					'allorany' => 'all',
 				),
-				'default_value' => '',
-				'formatting' => 'none',
+				'date_format' => 'yymmdd',
+				'display_format' => 'dd/mm/yy',
 			),
 			7 => 
 			array (
-				'key' => 'field_24',
-				'label' => 'Quận/huyện',
-				'name' => 'province',
-				'type' => 'select',
+				'key' => 'field_35',
+				'label' => 'Ngày giao',
+				'name' => 'delivery-date',
+				'type' => 'date_picker',
 				'order_no' => 7,
 				'instructions' => '',
 				'required' => 0,
@@ -291,7 +358,59 @@ if(function_exists("register_field_group"))
 					array (
 						0 => 
 						array (
-							'field' => 'field_4',
+							'field' => 'field_30',
+							'operator' => '==',
+							'value' => 1,
+						),
+					),
+					'allorany' => 'all',
+				),
+				'date_format' => 'yymmdd',
+				'display_format' => 'dd/mm/yy',
+			),
+			8 => 
+			array (
+				'key' => 'field_36',
+				'label' => 'Số lượng',
+				'name' => 'quantity',
+				'type' => 'text',
+				'order_no' => 8,
+				'instructions' => '',
+				'required' => 1,
+				'conditional_logic' => 
+				array (
+					'status' => 0,
+					'rules' => 
+					array (
+						0 => 
+						array (
+							'field' => 'field_30',
+							'operator' => '==',
+							'value' => 1,
+						),
+					),
+					'allorany' => 'all',
+				),
+				'default_value' => '',
+				'formatting' => 'html',
+			),
+			9 => 
+			array (
+				'key' => 'field_37',
+				'label' => 'Quận/Huyện',
+				'name' => 'province',
+				'type' => 'select',
+				'order_no' => 9,
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => 
+				array (
+					'status' => 0,
+					'rules' => 
+					array (
+						0 => 
+						array (
+							'field' => 'field_30',
 							'operator' => '==',
 							'value' => 1,
 						),
@@ -370,13 +489,13 @@ if(function_exists("register_field_group"))
 				'allow_null' => 0,
 				'multiple' => 0,
 			),
-			8 => 
+			10 => 
 			array (
-				'key' => 'field_25',
-				'label' => 'Ngày hết hạn đăng tin',
-				'name' => 'expire-date',
-				'type' => 'date_picker',
-				'order_no' => 8,
+				'key' => 'field_38',
+				'label' => 'Hình ảnh',
+				'name' => 'image',
+				'type' => 'file',
+				'order_no' => 10,
 				'instructions' => '',
 				'required' => 0,
 				'conditional_logic' => 
@@ -386,7 +505,32 @@ if(function_exists("register_field_group"))
 					array (
 						0 => 
 						array (
-							'field' => 'field_4',
+							'field' => 'field_30',
+							'operator' => '==',
+							'value' => 1,
+						),
+					),
+					'allorany' => 'all',
+				),
+				'save_format' => 'url',
+			),
+			11 => 
+			array (
+				'key' => 'field_39',
+				'label' => 'Ngày hết hạn',
+				'name' => 'expire-date',
+				'type' => 'date_picker',
+				'order_no' => 11,
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => 
+				array (
+					'status' => 0,
+					'rules' => 
+					array (
+						0 => 
+						array (
+							'field' => 'field_30',
 							'operator' => '==',
 							'value' => 1,
 						),
@@ -405,11 +549,11 @@ if(function_exists("register_field_group"))
 				array (
 					'param' => 'post_type',
 					'operator' => '==',
-					'value' => 'chuyen_xe',
+					'value' => 'chuyen_hang',
 					'order_no' => 0,
 				),
 			),
-			'allorany' => 'any',
+			'allorany' => 'all',
 		),
 		'options' => 
 		array (

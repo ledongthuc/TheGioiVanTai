@@ -1,25 +1,4 @@
-/**
- * Activate Add-ons
- * Here you can enter your activation codes to unlock Add-ons to use in your theme. 
- * Since all activation codes are multi-site licenses, you are allowed to include your key in premium themes.
- */ 
-
-function my_acf_settings( $options )
-{
-    // activate add-ons
-    $options['activation_codes']['repeater'] = 'XXXX-XXXX-XXXX-XXXX';
-    $options['activation_codes']['options_page'] = 'XXXX-XXXX-XXXX-XXXX';
-    $options['activation_codes']['flexible_content'] = 'XXXX-XXXX-XXXX-XXXX';
-    $options['activation_codes']['gallery'] = 'XXXX-XXXX-XXXX-XXXX';
-    
-    // setup other options (http://www.advancedcustomfields.com/docs/filters/acf_settings/)
-    
-    return $options;
-    
-}
-add_filter('acf_settings', 'my_acf_settings');
-
-
+<?php
 /**
  * Register field groups
  * The register_field_group function accepts 1 array which holds the relevant data to register a field group
@@ -30,7 +9,7 @@ add_filter('acf_settings', 'my_acf_settings');
 if(function_exists("register_field_group"))
 {
 	register_field_group(array (
-		'id' => '510480dd71f23',
+		'id' => '510c73a18879d',
 		'title' => 'Thông tin về xe',
 		'fields' => 
 		array (
@@ -209,9 +188,9 @@ if(function_exists("register_field_group"))
 			array (
 				0 => 
 				array (
-					'param' => 'post_category',
+					'param' => 'post_type',
 					'operator' => '==',
-					'value' => '8',
+					'value' => 'chuyen_xe',
 					'order_no' => 0,
 				),
 			),
@@ -228,4 +207,4 @@ if(function_exists("register_field_group"))
 		'menu_order' => 1,
 	));
 }
-
+?>
