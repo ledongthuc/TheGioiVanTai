@@ -342,6 +342,7 @@ li p, .art-postcontent li p, .art-blockcontent li p {
    left: 0;
    overflow: hidden;
    z-index: 0;
+   min-width: 1170px;
 }
 
 .art-slidenavigator > a {
@@ -2115,4 +2116,22 @@ table.border td, table.border th {
 }
 #listComments a {
     color: #6299C5;
+}
+#slide {
+    display: block;
+    left: 15%;
+    position: absolute;
+    top: 125px;
+    width: 390px;
+    height: 215px;
+    z-index: 1;	
+    padding: 5px;
+    background-color: #75C0FA;
+}
+#slide img {
+   width: 390px;
+   height: 215px;
+}
+#slide .pagination {
+   display: none;
 }

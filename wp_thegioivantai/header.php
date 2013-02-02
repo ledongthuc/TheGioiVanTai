@@ -12,6 +12,44 @@
 
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="<?php bloginfo('template_directory');?>/slide/slides.min.jquery.js"></script>
+<script>
+    $(function(){
+	$(function(){
+			$('#slide').slides({
+				preload: true,
+				play: 5000,
+				pause: 2500,
+				hoverPause: true,
+				animationStart: function(current){
+					$('.caption').animate({
+						bottom:-35
+					},100);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log('animationStart on slide: ', current);
+					};
+				},
+				animationComplete: function(current){
+					$('.caption').animate({
+						bottom:0
+					},200);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log('animationComplete on slide: ', current);
+					};
+				},
+				slidesLoaded: function() {
+					$('.caption').animate({
+						bottom:0
+					},200);
+				}
+			});
+		});
+    });
+</script>
+
 <?php wp_head(); ?>
 
 </head>
@@ -24,6 +62,19 @@
 			<a href="#">Thế giới vận tải</a>
 		</h1>
 		<h2 class="art-slogan" data-left="3%">Vận Tải - Kho Bãi - Hàng Hóa</h2>
+		<div id="slide">
+			<div class="slides_container">
+				<div>
+				    <img src="<?php bloginfo('template_directory');?>/slide/images/1.jpg">
+				</div>
+				<div>
+				    <img src="<?php bloginfo('template_directory');?>/slide/images/2.jpg">
+				</div>
+				<div>
+				    <img src="<?php bloginfo('template_directory');?>/slide/images/3.jpg">
+				</div>
+			    </div>
+		</div>
 		<div class="art-object1439133047" data-left="69.65%"></div>
 		<div class="art-object394026086" data-left="-1%"></div>
     </div>
