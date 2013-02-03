@@ -41,6 +41,7 @@ function loadImageFileName() {
 }
 
 function loadSlideScript() {
+	echo '<script src="'. plugins_url('/slides.min.jquery.js', __FILE__) .'"></script>';
 	echo '<script src="' . plugins_url('/script.js', __FILE__) . '"></script>';
 	echo '<script>loadSlideScript()</script>';
 }
