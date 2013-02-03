@@ -74,7 +74,7 @@
 			<h3 class="t">Tin tức</h3>
 		</div>
 		<table>
-			<?php query_posts('showposts=5&cat=4'); ?>
+			<?php query_posts('showposts=5&post_type=tin_tuc'); ?>
 			<?php while (have_posts()) : the_post(); ?>
 			<tr>
 				<td>

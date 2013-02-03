@@ -1,9 +1,18 @@
-<div>Buoi single-vehicle.php</div>
+<?php get_header(); ?>
 
-<div class="container content">
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+</header>
+<div class="art-sheet clearfix">
+<div class="art-layout-wrapper clearfix">
+<div class="art-content-layout">
+	<div class="art-content-layout-row">
+		<div class="art-layout-cell art-content clearfix">
+
+<div class="content">
 	<div class="content-center">
 		<div class="row-fluid dynamic">
-			<div class="span8 list">
+			<div>
 				<div class="post">
 					<h4 class="title"><?php the_title(); ?></h4>
 					<span class="entry-date"><abbr class="updated" title="<?php the_time('Y-m-d\TH:i:sO'); ?>"><?php the_time('M jS, Y'); ?></abbr> <?php _e('by '); ?><a href="<?php the_author_url(); ?>"><?php the_author(); ?></a>.</span> 
@@ -12,10 +21,16 @@
 							<?php the_content(); ?>
 						</div>
 					</div>
-						
-					<?php comments_template(); ?>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
+
+<?php endwhile; endif; ?>
+
+	</div>
+		<div class="art-layout-cell art-sidebar1 clearfix">
+			<?php get_sidebar(); ?>
+
+<?php get_footer(); ?>

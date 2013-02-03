@@ -1,4 +1,8 @@
-﻿<?php get_header(); ?>
+<?php get_header(); ?>
+
+</header>
+<div class="art-sheet clearfix">
+	<div class="art-layout-wrapper clearfix">
 
 <div class="art-content-layout">
 	<div class="art-content-layout-row">
@@ -20,12 +24,12 @@
 											</tr>
 										</thead>
 										<tbody>
-										<?php query_posts('showposts=5&cat=3'); ?>
+										<?php query_posts('showposts=5&post_type=chuyen_hang'); ?>
 										<?php while (have_posts()) : the_post(); ?>
 											<tr>
 												<td>
 													<div class="yui-dt-liner">
-														<a href="<?php the_permalink(); ?>"><?php echo get_post_meta($post->ID, "Mã số", true); ?></a>
+														<a href="<?php the_permalink(); ?>"><?php echo get_field("code"); ?></a>
 													</div>
 												</td>
 												<td>
@@ -36,11 +40,11 @@
 												<td>
 													<a href="<?php the_permalink(); ?>">
 														<strong>Từ: </strong>
-														<?php echo get_post_meta($post->ID, "Đi từ", true); ?><strong class="muiten">→</strong><span> Đến: </span>
-														<?php echo get_post_meta($post->ID, "Đến", true); ?>
+														<?php echo get_field("from"); ?><strong class="muiten">→</strong><span> Đến: </span>
+														<?php echo get_field("to"); ?>
 														<img alt="" src="<?php bloginfo('template_directory');?>/img/icon_new_1.gif"> 
 														<br>
-														<strong>Ngày Giao:</strong><?php echo get_post_meta($post->ID, "Ngày giờ", true); ?>
+														<strong>Ngày Giao: </strong><?php echo get_field("delivery_date"); ?>
 													</a>
 												</td>
 												<td>
@@ -181,13 +185,13 @@
 											</tr>
 										</thead>
 										<tbody>
-											<?php query_posts('showposts=5&cat=2'); ?>
+											<?php query_posts('showposts=5&post_type=chuyen_xe'); ?>
 											<?php while (have_posts()) : the_post(); ?>
 											<tr>
 												<td>
 													<div class="yui-dt-liner">
 													  <a href="<?php the_permalink(); ?>">
-													   <?php echo get_post_meta($post->ID, "Mã số", true); ?>
+													   <?php echo get_field("code"); ?>
 													   </a></div>
 												</td>
 												<td>
@@ -197,10 +201,10 @@
 												</td>
 												<td>
 													<a href="<?php the_permalink(); ?>"><strong>Từ: </strong>
-														<?php echo get_post_meta($post->ID, "Đi từ", true); ?>
+														<?php echo get_field("from"); ?>
 														
 														|<strong class="muiten">→</strong><span> Đến: </span>
-														<?php echo get_post_meta($post->ID, "Đến", true); ?>
+														<?php echo get_field("to"); ?>
 														
 														 
 														<img alt="" src="<?php bloginfo('template_directory');?>/img/icon_new_1.gif"> 
@@ -208,8 +212,8 @@
 														
 														<br>
 														<strong>Ngày Giao: </strong>
-														<?php echo get_post_meta($post->ID, "Ngày giờ", true); ?>
-														<br><strong>Giá: </strong>48,000,000 VND/Toàn Chuyến
+														<?php echo get_field("delivery_date"); ?>
+														<br><strong>Giá: </strong><?php echo get_field("price"); ?>
 													</a>
 												</td>
 												<td>
@@ -662,9 +666,5 @@
 		</div>
 		<div class="art-layout-cell art-sidebar1 clearfix">
 			<?php get_sidebar(); ?>
-		</div>
-		
-	</div>
-</div>
 
 <?php get_footer(); ?>
