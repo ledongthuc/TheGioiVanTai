@@ -1,0 +1,17 @@
+#slide {
+    display: block;
+    position: absolute;
+    top: 125px;
+    width: 400px;
+    height: 250px;
+    z-index: 1;	
+    padding: 5px;
+    background-color: #75C0FA;
+}
+#slide img {
+   width: 400px;
+   height: 250px;
+}
+#slide .pagination {
+   display: none;
+}
