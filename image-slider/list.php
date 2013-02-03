@@ -2,7 +2,7 @@
 function loadListImage() {
 	$directory = dirname(__FILE__) . '/images/';
 	//get all image files with a .jpg extension.
-	$images = glob($directory . "*.jpg");
+	$images = glob($directory . "*.*");
 	
 	echo '<table>';
 	foreach($images as $image)

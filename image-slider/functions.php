@@ -29,7 +29,7 @@ function loadImageFileName() {
 	$directory = dirname(__FILE__) . '/images/';
 
 	//get all image files with a .jpg extension.
-	$images = glob($directory . "*.jpg");
+	$images = glob($directory . "*.*");
 	 
 	$result = array();
 	//print each file name
