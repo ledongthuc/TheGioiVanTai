@@ -1463,7 +1463,7 @@ pre {
 }
 .art-postcontent ul > li::before, .art-post ul > li::before, .art-textblock ul > li::before {
   bottom:2px;
-  content:url(http://thuc.com.vn/template/158/images/postbullets.png);
+
   display:inline-block;
   font-size:0;
   line-height:0;
@@ -2124,6 +2124,7 @@ table.border td, table.border th {
 }
 #tabs .tab-name {
    width: 100px;
+   content: none;
 }
 #tabs .tab-name a {
    width: 70%;
@@ -2132,9 +2133,9 @@ table.border td, table.border th {
     color: white;
     font-family: 'Century Gothic',Arial,'Arial Unicode MS',Helvetica,sans-serif;
     font-size: 22px;
-    font-weight: normal;
-    line-height: 46px;
+    line-height: 29px;
     font-weight: bold;
+     float: right;
 }
 #tabs ul {
    background: none;
