@@ -2122,3 +2122,22 @@ table.border td, table.border th {
 #slide .pagination {
    display: none;
 }
+#tabs .tab-name {
+   width: 100px;
+}
+#tabs .tab-name a {
+   width: 70%;
+}
+#tabs .title {
+    color: white;
+    font-family: 'Century Gothic',Arial,'Arial Unicode MS',Helvetica,sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 46px;
+    font-weight: bold;
+}
+#tabs ul {
+   background: none;
+   background-color: #75C0FA;
+   text-align: right
+}

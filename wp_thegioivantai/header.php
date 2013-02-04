@@ -12,7 +12,17 @@
 
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css" />
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
+<script>
+	$(function() {
+		$( "#tabs" ).tabs({
+			event: "mouseover"
+		});
+	});
+</script>
 
 <?php wp_head(); ?>
 
