@@ -12,7 +12,7 @@
                 <fieldset id="fieldsetfrom">
                     <label><strong>Loại Xe:</strong></label>
                      <select name="vtid" id="vtid">
-						<option value="Xe tải">Xe tải</option>
+						<option value="1">Xe tải</option>
 						<option value="Xe Ben">Xe Ben</option>
 						<option value="7">Xe Container</option>
 						<option value="10">Chuyên dụng</option>
@@ -124,13 +124,13 @@
 				<tbody>
 				<?php
 					
-					$loaiXe = $_POST["vtid"]?'':'0';
-					$diemDi = $_POST["ptid"]?'':'0';
-					$diemDen = $_POST["dtid"]?'':'0';
+					$loaiXe = isset($_POST["vtid"]) == true ? $_POST["vtid"] : -1;
+					$diemDi = isset($_POST["ptid"]) == true ? $_POST["ptid"] : -1;
+					$diemDen = isset($_POST["dtid"]) == true ? $_POST["dtid"] : -1;
 					
 					echo '<div>Xe:'.$loaiXe.' Di:'.$diemDi.' Den:'.$diemDen.'</div>';
 					
-					if ($loaiXe == '0' && $diemDi == '0' && $diemDen == '0')
+					if ($loaiXe == -1 && $diemDi == -1 && $diemDen == -1)
 					{
 						$args = array(
 									   'post_type' => 'chuyen_xe',
@@ -147,9 +147,9 @@
 								   'meta_query' => array(
 													'relation' => 'OR',
 													array(
-														'key' => 'Loại xe',
+														'key' => 'vehicle',
 														'value' => $loaiXe,
-														'compare' => '='
+														'compare' => 'LIKE'
 												   ),
 												   array(
 														'key' => 'Đi từ',
@@ -163,7 +163,7 @@
 												   )),
 								   );
 					}
-					
+					print_r($args);
 					query_posts($args);
 
 					while (have_posts()) : the_post();
