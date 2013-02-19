@@ -17,6 +17,12 @@ add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 show_admin_bar( false );
 
 /*
+    Enum and enum's function    
+*/
+//require_once("custom-field/enum_province.php");
+require_once("custom-field/enum_vehicle.php");
+
+/*
     Custom fields
 */
 require_once("custom-field/chuyen-hang.php");

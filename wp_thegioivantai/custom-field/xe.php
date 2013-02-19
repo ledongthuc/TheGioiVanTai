@@ -37,16 +37,7 @@ if(function_exists("register_field_group"))
 					'allorany' => 'all',
 				),
 				'choices' => 
-				array (
-					1 => 'Xe tải',
-					2 => 'Xe ben',
-					3 => 'Xe Container',
-					4 => 'Chuyên dụng',
-					5 => 'Siêu trường - Siêu trọng',
-					6 => 'Xe bồn',
-					7 => 'Xe cẩu',
-					8 => 'Loại khác',
-				),
+				$enum_vehicle,
 				'default_value' => 8,
 				'allow_null' => 0,
 				'multiple' => 0,

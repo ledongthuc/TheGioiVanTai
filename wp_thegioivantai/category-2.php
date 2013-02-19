@@ -1,6 +1,12 @@
 ﻿<?php get_header(); ?>
 
 </header>
+
+<?php 
+    $loaiXe = isset($_POST["vtid"]) == true ? $_POST["vtid"] : -1;
+	$diemDi = isset($_POST["ptid"]) == true ? $_POST["ptid"] : -1;
+	$diemDen = isset($_POST["dtid"]) == true ? $_POST["dtid"] : -1;
+?>
 <div class="art-sheet clearfix">
 	<div class="art-layout-wrapper clearfix">
 
@@ -11,16 +17,7 @@
 				<form action='<?php bloginfo('url'); ?>/?cat=2' method="post">
                 <fieldset id="fieldsetfrom">
                     <label><strong>Loại Xe:</strong></label>
-                     <select name="vtid" id="vtid">
-						<option value="1">Xe tải</option>
-						<option value="Xe Ben">Xe Ben</option>
-						<option value="7">Xe Container</option>
-						<option value="10">Chuyên dụng</option>
-						<option value="15">Siêu trường - Siêu trọng</option>
-						<option value="20">Xe bồn</option>
-						<option value="30">Xe cẩu</option>
-						<option value="0" selected="selected">Xe khác</option>
-					</select>
+                     <?php print(Vehicle_dropdownlist("vtid", "vtid", true, $loaiXe)) ?>
 					<label><strong>Chạy từ:</strong></label>
 					<select name="ptid" id="ptid">
 						<option value="1">An giang</option>
@@ -33,7 +30,7 @@
 						<option value="Bình Dương">Bình Dương</option>
 						<option value="9">Bình Định</option>
 						<option value="10">Bình Phước</option>
-						<option value="0" selected="selected">Tỉnh/thành...</option>
+						<option value="-1" selected="selected">Tỉnh/thành...</option>
 					</select>
 				</fieldset>
 				<fieldset id="fieldsetto">
@@ -49,7 +46,7 @@
 						<option value="8">Bình Dương</option>
 						<option value="9">Bình Định</option>
 						<option value="10">Bình Phước</option>
-						<option value="0" selected="selected">Tỉnh/thành...</option>
+						<option value="-1" selected="selected">Tỉnh/thành...</option>
 					</select>
 					<input type="submit" value="Tìm" class="btn btn-m submit btnSearch  ">
 				</fieldset>
@@ -124,9 +121,7 @@
 				<tbody>
 				<?php
 					
-					$loaiXe = isset($_POST["vtid"]) == true ? $_POST["vtid"] : -1;
-					$diemDi = isset($_POST["ptid"]) == true ? $_POST["ptid"] : -1;
-					$diemDen = isset($_POST["dtid"]) == true ? $_POST["dtid"] : -1;
+					
 					
 					echo '<div>Xe:'.$loaiXe.' Di:'.$diemDi.' Den:'.$diemDen.'</div>';
 					
@@ -163,7 +158,7 @@
 												   )),
 								   );
 					}
-					print_r($args);
+					//print_r($args);
 					query_posts($args);
 
 					while (have_posts()) : the_post();

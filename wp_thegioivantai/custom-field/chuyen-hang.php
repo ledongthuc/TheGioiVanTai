@@ -6,6 +6,7 @@
  * This code must run every time the functions.php file is read
  */
 
+
 if(function_exists("register_field_group"))
 {
 	register_field_group(array (
@@ -88,17 +89,7 @@ if(function_exists("register_field_group"))
 					),
 					'allorany' => 'all',
 				),
-				'choices' => 
-				array (
-					1 => 'Xe tải',
-					2 => 'Xe ben',
-					3 => 'Xe Container',
-					4 => 'Chuyên dụng',
-					5 => 'Siêu trường - Siêu trọng',
-					6 => 'Xe bồn',
-					7 => 'Xe cẩu',
-					8 => 'Loại khác',
-				),
+				'choices' => $enum_vehicle,
 			),
 			3 => 
 			array (
