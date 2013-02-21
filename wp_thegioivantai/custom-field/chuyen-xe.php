@@ -36,12 +36,7 @@ if(function_exists("register_field_group"))
 					),
 					'allorany' => 'all',
 				),
-				'choices' => 
-				array (
-					1 => 'Xe đi',
-					2 => 'Xe quay về',
-					3 => 'Xe thường ngày',
-				),
+				'choices' => $enum_chuyenxe_type,
 				'default_value' => 1,
 				'allow_null' => 0,
 				'multiple' => 0,

@@ -36,8 +36,7 @@ if(function_exists("register_field_group"))
 					),
 					'allorany' => 'all',
 				),
-				'choices' => 
-				$enum_vehicle,
+				'choices' => $enum_vehicle,
 				'default_value' => 8,
 				'allow_null' => 0,
 				'multiple' => 0,

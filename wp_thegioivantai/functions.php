@@ -21,6 +21,7 @@ show_admin_bar( false );
 */
 require_once("custom-field/enum_province.php");
 require_once("custom-field/enum_vehicle.php");
+require_once("custom-field/enum_chuyenxe_type.php");
 
 /*
     Custom fields
