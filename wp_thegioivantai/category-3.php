@@ -1,6 +1,20 @@
 ﻿<?php get_header(); ?>
 
 </header>
+
+<?php 
+    $loaiXe = isset($_POST["vtid"]) == true ? $_POST["vtid"] : -1;
+    if(isset($_POST["ptid"]) == true) {
+        $diemDi = $_POST["ptid"];
+    } else if(isset($_GET["ptid"]) == true) {
+        $diemDi = $_GET["ptid"];
+    } else {
+        $diemDi = -1;
+    }
+	
+	$diemDen = isset($_POST["dtid"]) == true ? $_POST["dtid"] : -1;
+?>
+
 <div class="art-sheet clearfix">
 	<div class="art-layout-wrapper clearfix">
 	
@@ -8,47 +22,22 @@
 	<div class="art-content-layout-row">
 		<div class="art-post art-article">
             <div class="filterbox">
+                <form action='<?php bloginfo('url'); ?>/?cat=3' method="post">
                 <fieldset id="fieldsetfrom">
                     <label><strong>Loại Xe:</strong></label>
-                     <select name="vtid" id="vtid"><option value="1">Xe tải</option>
-						<option value="4">Xe Ben</option>
-						<option value="7">Xe Container</option>
-						<option value="10">Chuyên dụng</option>
-						<option value="15">Siêu trường - Siêu trọng</option>
-						<option value="20">Xe bồn</option>
-						<option value="30">Xe cẩu</option>
-						<option value="100">Loại khác</option>
-					</select>
+                     <?php print(Vehicle_dropdownlist("vtid", "vtid", true, $loaiXe)) ?>
 					<label><strong>Chạy từ:</strong></label>
-					<select name="ptid" id="ptid"><option value="1">An giang</option>
-						<option value="2">Bà Rịa Vũng Tàu</option>
-						<option value="3">Bạc Liêu</option>
-						<option value="4">Bắc Kạn</option>
-						<option value="5">Bắc Giang</option>
-						<option value="6">Bắc Ninh</option>
-						<option value="7">Bến Tre</option>
-						<option value="8">Bình Dương</option>
-						<option value="9">Bình Định</option>
-						<option value="10">Bình Phước</option>
-						<option value="0" selected="selected">Tỉnh/thành...</option>
-					</select>
+					
+					<?php print(province_dropdownlist("ptid", "ptid", true, $diemDi)) ?>
 				</fieldset>
 				<fieldset id="fieldsetto">
 					<label><strong>Điểm đến</strong></label>
-					<select name="dtid" id="dtid"><option value="1">An giang</option>
-						<option value="2">Bà Rịa Vũng Tàu</option>
-						<option value="3">Bạc Liêu</option>
-						<option value="4">Bắc Kạn</option>
-						<option value="5">Bắc Giang</option>
-						<option value="6">Bắc Ninh</option>
-						<option value="7">Bến Tre</option>
-						<option value="8">Bình Dương</option>
-						<option value="9">Bình Định</option>
-						<option value="10">Bình Phước</option>
-						<option value="0" selected="selected">Tỉnh/thành...</option>
-					</select>
-                <input type="button" onclick="search()" value="Tìm" class="btn btn-m submit btnSearch  ">
-            </fieldset>
+					
+					<?php print(province_dropdownlist("dtid", "dtid", true, $diemDen)) ?>
+					
+					<input type="submit" value="Tìm" class="btn btn-m submit btnSearch  ">
+				</fieldset>
+				</form>
         </div>
 		
 		<div class="yui-dt">
@@ -113,11 +102,39 @@
 				<?php
 					
 				
-					 $args = array(
+                    if ($loaiXe == -1 && $diemDi == -1 && $diemDen == -1)
+					{
+						$args = array(
+									   'post_type' => 'chuyen_hang',
+									   'posts_per_page' => 2,
+									   'paged' => ( get_query_var('paged') ? get_query_var('paged') : 1),
+									   );
+					}
+					else
+					{
+						$args = array(
 								   'post_type' => 'chuyen_hang',
 								   'posts_per_page' => 2,
 								   'paged' => ( get_query_var('paged') ? get_query_var('paged') : 1),
+								   'meta_query' => array(
+													'relation' => 'OR',
+													array(
+														'key' => 'vehicle',
+														'value' => $loaiXe,
+														'compare' => 'LIKE'
+												   ),
+												   array(
+														'key' => 'from',
+														'value' => $diemDi,
+														'compare' => 'LIKE'
+												   ),
+												   array(
+														'key' => 'to',
+														'value' => $diemDen,
+														'compare' => 'LIKE'
+												   )),
 								   );
+					}
 
 					query_posts($args);
 

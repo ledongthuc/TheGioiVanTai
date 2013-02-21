@@ -65,5 +65,26 @@
 		62 => 'Yên Bái',
 		64 => 'Hà Tây',
 		65 => 'Ngoài Việt Nam',
-    ) 
+    );
+    
+    function province_dropdownlist($id, $name, $is_add_all, $selected_value) {
+        global $enum_province;
+        
+        $result = '<select name="' . $id . '" id="' . $name . '">';
+        
+        if($is_add_all == true) {
+             $result = $result . '<option value="-1">-Chọn-</option>';
+        }
+         
+        foreach($enum_province as $key => $value) {
+            if($selected_value == $key) {
+                $result = $result . '<option value="' . $key . '" selected="">' . $value . '</option>';
+            } else {
+                $result = $result . '<option value="' . $key . '">' . $value . '</option>';
+            }
+        }
+		$result = $result . '</select>';
+		
+		return $result;
+    }
 ?>

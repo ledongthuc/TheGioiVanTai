@@ -19,7 +19,7 @@ show_admin_bar( false );
 /*
     Enum and enum's function    
 */
-//require_once("custom-field/enum_province.php");
+require_once("custom-field/enum_province.php");
 require_once("custom-field/enum_vehicle.php");
 
 /*

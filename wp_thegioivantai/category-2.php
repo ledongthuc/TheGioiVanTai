@@ -4,7 +4,14 @@
 
 <?php 
     $loaiXe = isset($_POST["vtid"]) == true ? $_POST["vtid"] : -1;
-	$diemDi = isset($_POST["ptid"]) == true ? $_POST["ptid"] : -1;
+    if(isset($_POST["ptid"]) == true) {
+        $diemDi = $_POST["ptid"];
+    } else if(isset($_GET["ptid"]) == true) {
+        $diemDi = $_GET["ptid"];
+    } else {
+        $diemDi = -1;
+    }
+	
 	$diemDen = isset($_POST["dtid"]) == true ? $_POST["dtid"] : -1;
 ?>
 <div class="art-sheet clearfix">
@@ -19,35 +26,14 @@
                     <label><strong>Loại Xe:</strong></label>
                      <?php print(Vehicle_dropdownlist("vtid", "vtid", true, $loaiXe)) ?>
 					<label><strong>Chạy từ:</strong></label>
-					<select name="ptid" id="ptid">
-						<option value="1">An giang</option>
-						<option value="2">Bà Rịa Vũng Tàu</option>
-						<option value="3">Bạc Liêu</option>
-						<option value="4">Bắc Kạn</option>
-						<option value="5">Bắc Giang</option>
-						<option value="6">Bắc Ninh</option>
-						<option value="7">Bến Tre</option>
-						<option value="Bình Dương">Bình Dương</option>
-						<option value="9">Bình Định</option>
-						<option value="10">Bình Phước</option>
-						<option value="-1" selected="selected">Tỉnh/thành...</option>
-					</select>
+					
+					<?php print(province_dropdownlist("ptid", "ptid", true, $diemDi)) ?>
 				</fieldset>
 				<fieldset id="fieldsetto">
 					<label><strong>Điểm đến</strong></label>
-					<select name="dtid" id="dtid">
-						<option value="An giang">An giang</option>
-						<option value="2">Bà Rịa Vũng Tàu</option>
-						<option value="3">Bạc Liêu</option>
-						<option value="4">Bắc Kạn</option>
-						<option value="5">Bắc Giang</option>
-						<option value="6">Bắc Ninh</option>
-						<option value="7">Bến Tre</option>
-						<option value="8">Bình Dương</option>
-						<option value="9">Bình Định</option>
-						<option value="10">Bình Phước</option>
-						<option value="-1" selected="selected">Tỉnh/thành...</option>
-					</select>
+					
+					<?php print(province_dropdownlist("dtid", "dtid", true, $diemDen)) ?>
+					
 					<input type="submit" value="Tìm" class="btn btn-m submit btnSearch  ">
 				</fieldset>
 				</form>
@@ -147,14 +133,14 @@
 														'compare' => 'LIKE'
 												   ),
 												   array(
-														'key' => 'Đi từ',
+														'key' => 'from',
 														'value' => $diemDi,
-														'compare' => '='
+														'compare' => 'LIKE'
 												   ),
 												   array(
-														'key' => 'Đến',
+														'key' => 'to',
 														'value' => $diemDen,
-														'compare' => '='
+														'compare' => 'LIKE'
 												   )),
 								   );
 					}

@@ -243,409 +243,44 @@
                               <div id="tabs-1">
                                 <div class="wrapper">
                                     <ul class="list1 fleft">
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=1">An giang
-                                          (8)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=2">Bà Rịa Vũng Tàu
-                                          (31)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=5">Bắc Giang
-                                          (12)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=4">Bắc Kạn
-                                          (3)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=3">Bạc Liêu
-                                          (3)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=6">Bắc Ninh
-                                          (10)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=7">Bến Tre
-                                          (7)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=9">Bình Định
-                                          (15)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=8">Bình Dương
-                                          (128)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=10">Bình Phước
-                                          (23)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=11">Bình Thuận
-                                          (11)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=12">Cà Mau
-                                          (3)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=14">Cần Thơ
-                                          (16)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=13">Cao Bằng
-                                          (1)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=15">Đà Nẵng
-                                          (33)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=16">Đắc Lắk
-                                          (18)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=17">Đắc Nông
-                                          (7)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=18">Điện Biên
-                                          (1)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=19">Đồng Nai
-                                          (93)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=20">Đồng Tháp
-                                          (11)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=21">Gia Lai
-                                          (16)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=22">Hà Giang
-                                          (0)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=23">Hà Nam
-                                          (28)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=24">Hà Nội
-                                          (116)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=64">Hà Tây
-                                          (2)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=25">Hà Tĩnh
-                                          (2)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=26">Hải Dương
-                                          (6)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=27">Hải Phòng
-                                          (41)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=28">Hậu Giang
-                                          (1)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=29">Hoà Bình
-                                          (4)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=30">Hưng Yên
-                                          (13)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=31">Khánh Hoà
-                                          (20)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=32">Kiên Giang
-                                          (3)</a> </li>
-                                    </ul>
-                                    
-                                    <ul class="list1 fleft">
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=33">Kon Tum
-                                          (1)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=34">Lai Châu
-                                          (0)</a> </li>                
-                                          
-                                             <li style="width: 140px; float: left"><a href="/load/List?ptid=39">Nam Định
-                                          (7)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=40">Nghệ An
-                                          (17)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=66">Ngoài Việt Nam
-                                          (0)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=41">Ninh Bình
-                                          (5)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=42">Ninh Thuận
-                                          (6)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=43">Phú Thọ
-                                          (5)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=44">Phú Yên
-                                          (8)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=45">Quảng Bình
-                                          (14)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=46">Quảng Nam
-                                          (6)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=47">Quảng Ngãi
-                                          (15)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=48">Quảng Ninh
-                                          (6)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=49">Quảng Trị
-                                          (6)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=50">Sóc Trăng
-                                          (1)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=51">Sơn La
-                                          (2)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=52">Tây Ninh
-                                          (19)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=53">Thái Bình
-                                          (3)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=54">Thái Nguyên
-                                          (1)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=55">Thanh Hoá
-                                          (8)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=56">Thừa Thiên Huế
-                                          (4)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=57">Tiền Giang
-                                          (11)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=58">TP. Hồ Chí Minh
-                                          (542)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=59">Trà Vinh
-                                          (3)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=60">Tuyên Quang
-                                          (4)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=61">Vĩnh Long
-                                          (0)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=62">Vĩnh Phúc
-                                          (2)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=63">Yên Bái
-                                          (1)</a> </li>
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=35">Lâm Đồng
-                                          (15)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=36">Lạng Sơn
-                                          (2)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=37">Lào Cai
-                                          (2)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/load/List?ptid=38">Long An
-                                          (29)</a> </li>
-                                    </ul>
-                                    
-                                    <ul class="list1 fleft">
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=1">An giang
-                                          (5)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=2">Bà Rịa Vũng Tàu
-                                          (13)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=5">Bắc Giang
-                                          (11)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=4">Bắc Kạn
-                                          (2)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=3">Bạc Liêu
-                                          (1)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=6">Bắc Ninh
-                                          (32)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=7">Bến Tre
-                                          (1)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=9">Bình Định
-                                          (5)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=8">Bình Dương
-                                          (24)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=10">Bình Phước
-                                          (7)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=11">Bình Thuận
-                                          (1)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=12">Cà Mau
-                                          (0)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=14">Cần Thơ
-                                          (11)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=13">Cao Bằng
-                                          (3)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=15">Đà Nẵng
-                                          (30)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=16">Đắc Lắk
-                                          (13)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=17">Đắc Nông
-                                          (1)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=18">Điện Biên
-                                          (1)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=19">Đồng Nai
-                                          (28)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=20">Đồng Tháp
-                                          (0)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=21">Gia Lai
-                                          (5)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=22">Hà Giang
-                                          (0)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=23">Hà Nam
-                                          (2)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=24">Hà Nội
-                                          (181)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=64">Hà Tây
-                                          (1)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=25">Hà Tĩnh
-                                          (1)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=26">Hải Dương
-                                          (9)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=27">Hải Phòng
-                                          (104)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=28">Hậu Giang
-                                          (0)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=29">Hoà Bình
-                                          (1)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=30">Hưng Yên
-                                          (13)</a> </li>
-                                        <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=62">Vĩnh Phúc
-                                          (2)</a> </li>
-                                    </ul>
-                                    
-                                    <ul class="list1 fleft last">
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=42">Ninh Thuận
-                                          (0)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=43">Phú Thọ
-                                          (6)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=44">Phú Yên
-                                          (1)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=45">Quảng Bình
-                                          (0)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=46">Quảng Nam
-                                          (5)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=47">Quảng Ngãi
-                                          (5)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=48">Quảng Ninh
-                                          (9)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=49">Quảng Trị
-                                          (6)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=50">Sóc Trăng
-                                          (0)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=51">Sơn La
-                                          (1)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=52">Tây Ninh
-                                          (4)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=53">Thái Bình
-                                          (23)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=54">Thái Nguyên
-                                          (1)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=55">Thanh Hoá
-                                          (3)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=56">Thừa Thiên Huế
-                                          (3)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=57">Tiền Giang
-                                          (5)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=58">TP. Hồ Chí Minh
-                                          (519)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=59">Trà Vinh
-                                          (3)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=60">Tuyên Quang
-                                          (3)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=61">Vĩnh Long
-                                          (2)</a> </li>
-                                          
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=31">Khánh Hoà
-                                          (17)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=32">Kiên Giang
-                                          (7)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=33">Kon Tum
-                                          (2)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=34">Lai Châu
-                                          (3)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=35">Lâm Đồng
-                                          (8)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=36">Lạng Sơn
-                                          (10)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=37">Lào Cai
-                                          (13)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=38">Long An
-                                          (2)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=39">Nam Định
-                                          (1)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=40">Nghệ An
-                                          (1)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=66">Ngoài Việt Nam
-                                          (0)</a> </li>
-                                       
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=41">Ninh Bình
-                                          (2)</a> </li>
-                                       <li style="width: 140px; float: left"><a href="/vehicle/List?ptid=63">Yên Bái
-                                          (2)</a> </li>
-                                 
-                                    </ul>
+                                    <?php
+                                        if(isset($enum_province) == true && count($enum_province) > 0) {
+                                            foreach($enum_province as $key => $value) {
+                                                  print_r("<li style='width: 140px; float: left'><a href='". get_home_url() ."/?cat=2&ptid=" . $key . "'>" . $value . "</a> </li>");
+                                            }
+                                        }
+                                     ?>
+                                     </ul>
                                  </div>
                                  <div style="clear: both"></div>
                               </div>
                               <div id="tabs-2">
-                                 <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+                                 <div class="wrapper">
+                                    <ul class="list1 fleft">
+                                    <?php
+                                        if(isset($enum_province) == true && count($enum_province) > 0) {
+                                            foreach($enum_province as $key => $value) {
+                                                  print_r("<li style='width: 140px; float: left'><a href='". get_home_url() ."/?cat=3&ptid=" . $key . "'>" . $value . "</a> </li>");
+                                            }
+                                        }
+                                     ?>
+                                     </ul>
+                                 </div>
+                                 <div style="clear: both"></div>
                               </div>
                               <div id="tabs-3">
-                                 <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
-                                 <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+                                 <div class="wrapper">
+                                    <ul class="list1 fleft">
+                                    <?php
+                                        if(isset($enum_province) == true && count($enum_province) > 0) {
+                                            foreach($enum_province as $key => $value) {
+                                                  print_r("<li style='width: 140px; float: left'><a href='". get_home_url() ."/?cat=5&ptid=" . $key . "'>" . $value . "</a> </li>");
+                                            }
+                                        }
+                                     ?>
+                                     </ul>
+                                 </div>
+                                 <div style="clear: both"></div>
                               </div>
                            </div>
 
