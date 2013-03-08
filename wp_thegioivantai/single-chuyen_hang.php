@@ -37,7 +37,7 @@
 									Đi từ:</strong>
 							</th>
 							<td>
-								<?php echo get_field("from"); ?>&nbsp<?php echo get_field("from_province"); ?>
+								<?php echo get_province_name_from_id(get_field("from")); ?>&nbsp<?php echo get_province_name_from_id(get_field("from_province")); ?>
 							</td>
 						</tr>
 						<tr class="even">
@@ -46,7 +46,7 @@
 									Đến:</strong>
 							</th>
 							<td>
-								<?php echo get_field("to"); ?>&nbsp<?php echo get_field("to_province"); ?>
+								<?php echo get_province_name_from_id(get_field("to")); ?>&nbsp<?php echo get_province_name_from_id(get_field("to_province")); ?>
 							</td>
 						</tr>
 						<tr class="odd">
@@ -55,7 +55,7 @@
 									Ngày giao:</strong>
 							</th>
 							<td>
-								<?php echo get_field("delivery_date"); ?>
+								<?php echo get_field("delivery-date"); ?>
 							</td>
 						</tr>
 						<tr class="odd">
@@ -72,7 +72,7 @@
 								</strong>
 							</th>
 							<td>
-								<?php echo get_field("vehicle"); ?>
+								<?php echo get_vehicles_from_id(get_field("vehicle")); ?>
 							</td>
 						</tr>
 						<tr class="odd">

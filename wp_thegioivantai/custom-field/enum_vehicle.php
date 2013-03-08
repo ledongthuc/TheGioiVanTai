@@ -29,4 +29,38 @@
 		
 		return $result;
     }
+	
+	function get_vehicle_from_id($id) {
+		global $enum_vehicle;
+		
+		if($id == null) {
+			return "";
+		}
+		
+		if(array_key_exists($id, $enum_vehicle) == false) {
+			return "";
+		}
+		return $enum_vehicle[$id];
+	}
+	
+	function get_vehicles_from_id($idArray) {
+		global $enum_vehicle;
+		
+		if($idArray == null) {
+			return "";
+		}
+		
+		if(count($idArray) == 0) {
+			return "";
+		}
+		
+		foreach($idArray as $id) {
+			if(array_key_exists($id, $enum_vehicle) == false) {
+				continue;
+			}
+			
+			$result .= $enum_vehicle[$id] . "; ";
+		}
+		return $result;
+	}
 ?>

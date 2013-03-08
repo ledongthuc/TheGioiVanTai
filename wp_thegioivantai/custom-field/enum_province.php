@@ -87,4 +87,16 @@
 		
 		return $result;
     }
+	
+	function get_province_name_from_id($id) {
+		global $enum_province;
+		if($id == null) {
+			return "";
+		}
+		
+		if(array_key_exists($id, $enum_province) == false) {
+			return "";
+		}
+		return $enum_province[$id];
+	}
 ?>

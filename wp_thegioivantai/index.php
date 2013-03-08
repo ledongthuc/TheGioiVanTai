@@ -40,11 +40,11 @@
 												<td>
 													<a href="<?php the_permalink(); ?>">
 														<strong>Từ: </strong>
-														<?php echo get_field("from"); ?><strong class="muiten">→</strong><span> Đến: </span>
-														<?php echo get_field("to"); ?>
+														<?php echo get_province_name_from_id(get_field("from")); ?><strong class="muiten">→</strong><span> Đến: </span>
+														<?php echo get_province_name_from_id(get_field("to")); ?>
 														<img alt="" src="<?php bloginfo('template_directory');?>/img/icon_new_1.gif"> 
 														<br>
-														<strong>Ngày Giao: </strong><?php echo get_field("delivery_date"); ?>
+														<strong>Ngày Giao: </strong><?php echo get_field("delivery-date"); ?>
 													</a>
 												</td>
 												<td>
@@ -201,10 +201,10 @@
 												</td>
 												<td>
 													<a href="<?php the_permalink(); ?>"><strong>Từ: </strong>
-														<?php echo get_field("from"); ?>
+														<?php echo get_province_name_from_id(get_field("from")); ?>
 														
 														|<strong class="muiten">→</strong><span> Đến: </span>
-														<?php echo get_field("to"); ?>
+														<?php echo get_province_name_from_id(get_field("to")); ?>
 														
 														 
 														<img alt="" src="<?php bloginfo('template_directory');?>/img/icon_new_1.gif"> 
@@ -212,7 +212,7 @@
 														
 														<br>
 														<strong>Ngày Giao: </strong>
-														<?php echo get_field("delivery_date"); ?>
+														<?php echo get_field("expire-date"); ?>
 														<br><strong>Giá: </strong><?php echo get_field("price"); ?>
 													</a>
 												</td>
@@ -238,7 +238,7 @@
                                  <span class="title">Tìm kiếm theo địa phương</span>
                                  <li class="tab-name"><a href="#tabs-1">Xe</a></li>
                                  <li class="tab-name"><a href="#tabs-2">Hàng Hóa</a></li>
-                                 <li class="tab-name"><a href="#tabs-3">Kho Bãi</a></li>
+                                 <!--<li class="tab-name"><a href="#tabs-3">Kho Bãi</a></li>-->
                               </ul>
                               <div id="tabs-1">
                                 <div class="wrapper">
@@ -268,7 +268,7 @@
                                  </div>
                                  <div style="clear: both"></div>
                               </div>
-                              <div id="tabs-3">
+                              <!--<div id="tabs-3">
                                  <div class="wrapper">
                                     <ul class="list1 fleft">
                                     <?php
@@ -281,7 +281,7 @@
                                      </ul>
                                  </div>
                                  <div style="clear: both"></div>
-                              </div>
+                              </div>-->
                            </div>
 
 									<div class="box1" id="tabs">

@@ -14,7 +14,21 @@ function custom_excerpt_length( $length ) {
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
-show_admin_bar( false );
+//show_admin_bar( false );
+
+function remove_menu_items() {
+  global $menu;
+  $restricted = array(__('Links'), __('Posts'), __('Media'), __('Tools'), __('Settings'), __('Appearance'), __('Cài đặt'));
+  end ($menu);
+  while (prev($menu)){
+    $value = explode(' ',$menu[key($menu)][0]);
+    if(in_array($value[0] != NULL?$value[0]:"" , $restricted)){
+      unset($menu[key($menu)]);}
+    }
+  }
+
+add_action('admin_menu', 'remove_menu_items');
+
 
 /*
     Enum and enum's function    

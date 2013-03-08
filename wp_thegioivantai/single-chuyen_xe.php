@@ -37,7 +37,7 @@
 									Đi từ:</strong>
 							</th>
 							<td>
-								<?php echo get_field("from"); ?>
+								<?php echo get_province_name_from_id(get_field("from")); ?>
 							</td>
 						</tr>
 						<tr class="even">
@@ -46,7 +46,7 @@
 									Đến:</strong>
 							</th>
 							<td>
-								<?php echo get_field("to"); ?>
+								<?php echo get_province_name_from_id(get_field("to")); ?>
 							</td>
 						</tr>
 						<tr class="odd">
@@ -54,7 +54,7 @@
 								<strong>Ngày hết hạn:</strong>
 							</th>
 							<td>
-								<?php echo get_field("expire_date"); ?>
+								<?php echo get_field("expire-date"); ?>
 							</td>
 						</tr>
 						<tr class="odd">
@@ -71,7 +71,7 @@
 								</strong>
 							</th>
 							<td>
-								<?php echo get_field("vehicle"); ?>
+								<?php echo get_vehicle_from_id(get_field("vehicle")); ?>
 							</td>
 						</tr>
 						<tr class="odd">
@@ -98,7 +98,7 @@
 									Biển Số xe:</strong>
 							</th>
 							<td>
-								<?php echo get_field("license_plate"); ?>
+								<?php echo get_field("license-plate"); ?>
 							</td>
 						</tr>
 						

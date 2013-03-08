@@ -106,11 +106,6 @@
                 </thead>
 				<tbody>
 				<?php
-					
-					
-					
-					echo '<div>Xe:'.$loaiXe.' Di:'.$diemDi.' Den:'.$diemDen.'</div>';
-					
 					if ($loaiXe == -1 && $diemDi == -1 && $diemDen == -1)
 					{
 						$args = array(
@@ -171,21 +166,21 @@
 						</td>
 						<td>
 							<div class="yui-dt-liner">
-								<a href="<?php the_permalink(); ?>" class="link-filter" title="<?php echo get_field('from'); ?>">
-									<?php echo get_field("from"); ?></a>
+								<a href="<?php the_permalink(); ?>" class="link-filter" title="<?php echo get_province_name_from_id(get_field('from')); ?>">
+									<?php echo get_province_name_from_id(get_field('from')); ?></a>
 								
 							</div>
 						</td>
 						<td>
 							<div class="yui-dt-liner">
-								<a href="<?php the_permalink(); ?>" class="link-filter" title="<?php echo get_field('from_province'); ?>">
-									<?php echo get_field("from_province"); ?></a>
+								<a href="<?php the_permalink(); ?>" class="link-filter" title="<?php echo get_province_name_from_id(get_field('from_province')); ?>">
+									<?php echo get_province_name_from_id(get_field("from_province")); ?></a>
 							</div>
 						</td>
 						<td>
 							<div class="yui-dt-liner">
-								<a href="<?php the_permalink(); ?>" class="link-filter" title="<?php echo get_field('to'); ?>">
-									<?php echo get_field("to"); ?></a>
+								<a href="<?php the_permalink(); ?>" class="link-filter" title="<?php echo get_province_name_from_id(get_field('to')); ?>">
+									<?php echo get_province_name_from_id(get_field("to")); ?></a>
 								
 							</div>
 						</td>
@@ -203,13 +198,13 @@
 						<td>
 							<div class="yui-dt-liner">
 								<a href="<?php the_permalink(); ?>">
-									<?php echo get_field("way_type"); ?>
+									<?php echo get_chuyenxe_type_from_id(get_field("way_type")); ?>
 								</a>
 							</div>
 						</td>
 						<td>
 							<div class="yui-dt-liner">
-								<?php echo get_field("delivery_date"); ?>
+								<?php echo get_field("expire-date"); ?>
 							</div>
 						</td>
 						<td align="right">

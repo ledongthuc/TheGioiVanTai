@@ -222,7 +222,7 @@ if(function_exists("register_field_group"))
 					),
 					'allorany' => 'all',
 				),
-				'date_format' => 'yymmdd',
+				'date_format' => 'dd/mm/yy',
 				'display_format' => 'dd/mm/yy',
 			),
 			8 => 
