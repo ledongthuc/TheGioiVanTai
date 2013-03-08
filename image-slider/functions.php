@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /*
 Plugin Name: Image Slider
 Plugin URI: 
@@ -54,7 +54,4 @@ function register_plugin_menu_page() {
 function load_upload_page() {
 	include 'list.php';
 	loadListImage();
-}
-
-?>
-
+}?>
